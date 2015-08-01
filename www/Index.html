@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Simple Login Form</title>
+<meta charset="UTF-8" />
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/structure.css">
+</head>
+
+<body>
+<form class="box login">
+	<fieldset class="boxBody">
+	  <label>Username</label>
+	  <input type="text" tabindex="1" placeholder="PremiumPixel" required id="txtUserName" name="txtUserName">
+	  <label><a href="#" class="rLink" tabindex="5">Forget your password?</a>Password</label>
+	  <input type="password" tabindex="2" required id="txtPassword" name="txtPassword">
+	</fieldset>
+	<footer>
+	  <label><input type="checkbox" tabindex="3">Keep me logged in</label>
+	  <input type="button" class="btnLogin" value="Login" onClick="login()" tabindex="4">
+	</footer>
+</form>
+<footer id="main">
+  <a href="http://wwww.cssjunction.com">Simple Login Form (HTML5/CSS3 Coded) by CSS Junction</a> | <a href="http://www.premiumpixels.com">PSD by Premium Pixels</a>
+</footer>
+</body>
+
+<script type="text/javascript">
+	function login()
+	{
+		var username = document.getElementById("txtUserName").value;
+		var password = document.getElementById("txtPassword").value;
+		
+		if(username == "cor" && password == "pass")
+		{
+			document.location="Backup/Index.html";
+		} else {
+			alert("Username or Password Invalid");
+		}
+	}
+</script>
+
+</html>
